@@ -37,3 +37,6 @@ const waitForElement = new Promise(resolve => {
     const elem = await waitForElement;
     elem.style.display = 'block'
 })();
+
+//* the iife consumes a promise that is always resolved.
+//* what happens when we have a reject?  Look at Main2.js

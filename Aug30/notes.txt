@@ -24,4 +24,4 @@ a nameless function that wraps another function(?).  The only place you can use 
 Edward says they are not named, because they are immediately called and only once.
 
 
-IIFE was formerly used for classm design patterns - 2004.  
+IIFE was formerly used for class design patterns - 2004.  
