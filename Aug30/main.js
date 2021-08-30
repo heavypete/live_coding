@@ -16,6 +16,24 @@ const waitForElement = new Promise(resolve => {
     }, 3000)
 });
 
-waitForElement.then((elem) => {
+//* consume promise with classic promise syntax (ES2015)
+// waitForElement.then((elem) => {
+//     elem.style.display = 'block';
+//     elem.style.color = 'darkblue';
+// })
+
+//* consume promise with async/await syntax (ES2017).
+
+const displayTheMessage = async () => {
+    const elem = await waitForElement;
     elem.style.display = 'block';
-})
+};
+
+displayTheMessage();
+
+//*transform into IIFE
+
+(async () => {
+    const elem = await waitForElement;
+    elem.style.display = 'block'
+})();
