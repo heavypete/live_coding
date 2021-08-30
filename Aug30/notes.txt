@@ -1,0 +1,27 @@
+
+Live Coding: From setTimeOut to Promise-classic to Promise-async/await to IIFE
+Create a simple HTML/CSS/JavaScript website that shows a message after 3 seconds with setTimeout()
+Wrap the setTimeout in a Promise and consume the promise with classic promise syntax
+Convert the classic promise syntax to async/await
+Convert the async/await syntax into an IIFE
+
+
+IIFE = immediately invoked function expression.
+
+
+Example of an IIFE :
+
+var name = "Aiman"
+
+(function(a,b) => {
+    var name = 'john';
+    console.log(name);
+})();
+
+console.log(name)
+
+a nameless function that wraps another function(?).  The only place you can use 'await.'  
+Edward says they are not named, because they are immediately called and only once.
+
+
+IIFE was formerly used for classm design patterns - 2004.  
