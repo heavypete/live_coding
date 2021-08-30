@@ -24,12 +24,12 @@ const waitForElement = new Promise(resolve => {
 
 //* consume promise with async/await syntax (ES2017).
 
-const displayTheMessage = async () => {
-    const elem = await waitForElement;
-    elem.style.display = 'block';
-};
+// const displayTheMessage = async () => {
+//     const elem = await waitForElement;
+//     elem.style.display = 'block';
+// };
 
-displayTheMessage();
+// displayTheMessage();
 
 //*transform into IIFE
 
